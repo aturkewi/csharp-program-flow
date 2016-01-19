@@ -40,6 +40,7 @@ namespace Conditionals
 				// if (i > 10){
 				// 		break
 				// }
+			/*
 			for (int i = 0; i < 10; ++i) {
 				if (i == 5) {
 					continue;
@@ -47,6 +48,12 @@ namespace Conditionals
 				Console.Write ("Happy Birthday! {0} ", i);
 			}
 			Console.WriteLine ("\nTaDa!!");
+			*/
+			for (int i = 0; i < 2000; i++) {
+				if (i % 100 == 0) {
+					Console.WriteLine ("Happy Birthday! {0} ", i);
+				}
+			}
 
 		}
 	}
