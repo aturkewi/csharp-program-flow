@@ -41,7 +41,10 @@ namespace Conditionals
 				// 		break
 				// }
 			for (int i = 0; i < 10; ++i) {
-				Console.Write ("Happy Birthday!");
+				if (i == 5) {
+					continue;
+				}
+				Console.Write ("Happy Birthday! {0} ", i);
 			}
 			Console.WriteLine ("\nTaDa!!");
 
