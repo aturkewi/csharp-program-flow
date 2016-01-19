@@ -21,10 +21,10 @@ namespace Conditionals
 			Console.Write("How old are you? ");
 			int age = int.Parse (Console.ReadLine ());
 
-			while (age > 0) {
+			do{
 				Console.Write ("Happy Birthday ");
 				age--;
-			}
+			} while (age > 0);
 
 			Console.WriteLine ("\nTaDa!!");
 		}
