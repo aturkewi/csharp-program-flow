@@ -48,11 +48,29 @@ namespace Conditionals
 				Console.Write ("Happy Birthday! {0} ", i);
 			}
 			Console.WriteLine ("\nTaDa!!");
-			*/
+
 			for (int i = 0; i < 2000; i++) {
 				if (i % 100 == 0) {
 					Console.WriteLine ("Happy Birthday! {0} ", i);
 				}
+			}
+			*/
+
+			// SWITCH
+			Console.Write("Pick a number between 1 and 5: ");
+			int choice = int.Parse (Console.ReadLine ());
+
+			switch (choice) {
+			case 6:
+				// Case 6 will fall through and do what 5 is
+			case 5:
+				Console.WriteLine ("You picked the biggest legal num");
+				break;
+			case 4:
+				Console.WriteLine ("Wow, you piecked a 4");
+			default:
+				Console.WriteLine ("Not a legal entry, please try again");
+				break;
 			}
 
 		}
