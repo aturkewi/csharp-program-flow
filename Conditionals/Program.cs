@@ -4,6 +4,16 @@ namespace Conditionals
 {
 	class MainClass
 	{
+		// Added just for enumerated constant
+		enum Color{
+			Red,
+			Orange,
+			Green,
+			Blue,
+			Indigo,
+			Violet
+		}
+
 		public static void Main (string[] args)
 		{
 			// IF ELSE
@@ -57,6 +67,7 @@ namespace Conditionals
 			*/
 
 			// SWITCH
+			/*
 			Console.Write("Pick a number between 1 and 5: ");
 			int choice = int.Parse (Console.ReadLine ());
 
@@ -72,7 +83,22 @@ namespace Conditionals
 				Console.WriteLine ("Not a legal entry, please try again");
 				break;
 			}
+			*/
 
+			// ENUMERATED CONSTANTS
+			Color favorite = Color.Red;
+
+			switch (favorite) {
+			case Color.Red:
+				Console.WriteLine ("You chose Red");
+				break;
+			case Color.Orange:
+				Console.WriteLine ("You chose orange");
+				break;
+			default:
+				Console.WriteLine ("I dont know what you chose");
+				break;
+			}
 		}
 	}
 }
