@@ -20,18 +20,27 @@ namespace Conditionals
 			// }
 
 			// WHILE LOOP
-			// Console.Write("How old are you? ");
-			// int age = int.Parse (Console.ReadLine ());
-			// 
-			// do{
-			// 	Console.Write ("Happy Birthday ");
-			// 	age--;
-			// } while (age > 0);
-			//
-			// Console.WriteLine ("\nTaDa!!");
+			/*
+			Console.Write("How old are you? ");
+			int age = int.Parse (Console.ReadLine ());
+
+			do{
+				Console.Write ("Happy Birthday ");
+				age--;
+			} while (age > 0);
+
+			Console.WriteLine ("\nTaDa!!");
+			*/
 
 			// FOR LOOP
-			for (int i = 5; age > 0; age--) {
+				// All these are optional, could be:
+				// int i = 0
+				// for (;; ){
+				// ++i;
+				// if (i > 10){
+				// 		break
+				// }
+			for (int i = 0; i < 10; ++i) {
 				Console.Write ("Happy Birthday!");
 			}
 			Console.WriteLine ("\nTaDa!!");
